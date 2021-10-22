@@ -1,8 +1,6 @@
 # Doomed to fail? 
 # Describing the extent of species reintroductions that have succumbed to negative climate change
-Code for BES funded project
-
-Doomed to fail? Describing the extent of species reintroductions that have succumbed to negative climate change
+Code for BES funded project SR20/1544
 
 This project aims to improve our understanding of the impacts of recent climate change on species reintroductions, and positively influence the current and future management of thousands of threatened species globally.
 
