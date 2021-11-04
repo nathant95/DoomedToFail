@@ -39,7 +39,7 @@ install.packages("maptools")
 install.packages("raster")
 install.packages("sp")
 install.packages("rgdal")
-install.packages("RStoolbox")
+install.packages("RStoolbox", dep = TRUE)
 install.packages("dplyr")
 install.packages("adehabitatHR")
 install.packages("maps")
@@ -51,6 +51,7 @@ install.packages("abind")
 install.packages("gridExtra")
 install.packages("lattice")
 install.packages("ecospat")
+install.packages("Rcpp")
 
 
 # if you get memory problems (error messages will tell you that vectors of certain sizes can't be handled),
