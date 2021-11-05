@@ -52,6 +52,7 @@ install.packages("gridExtra")
 install.packages("lattice")
 install.packages("ecospat")
 install.packages("Rcpp")
+install.packages("maps")
 
 
 # if you get memory problems (error messages will tell you that vectors of certain sizes can't be handled),
