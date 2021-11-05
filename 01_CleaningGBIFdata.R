@@ -87,7 +87,7 @@ df <- Occ_cleaned
 Sp_occ_SPDF <- SpatialPointsDataFrame(coords=xy, data=df, proj4string = CRS(ProjW)) # convert to SPDF
 
 # view points on map
-library(maptools)
+library(maps)
 
 map("world", fill = FALSE)
 points(Sp_occ_SPDF, pch = 16, col = "red")
