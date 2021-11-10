@@ -29,7 +29,7 @@ species <- basename(wd)
 bioclim_all <- stack(list.files("C:\\Users\\Public\\Documents\\Modelling\\wc2.1_2.5m_bioc_current", full.names = T))
 
 # Set data projection to the standard WGS84
-ProjW = "+proj=longlat +ellps=WGS84 +towgs84=0,0,0,0,0,0,0 +no_defs" #map projection (EPSG: 4326)
+ProjW = "+proj=longlat +ellps=WGS84 +no_defs" #map projection (EPSG: 4326)
 
 # Load terrestrial ecoregions shapefile with a 10km buffer to ensure coastal cells are preserved
 geogrextent<-readOGR("C:\\Users\\Public\\Documents\\Modelling\\wwf_ecoregions_shp\\wwf_terr_ecos_10kmbuffered.shp", p4s = ProjW)
@@ -2129,7 +2129,7 @@ PC5_bio17 <- Mri_370_2030_stand[[17]] * PC5_load[17,]
 PC5_bio18 <- Mri_370_2030_stand[[18]] * PC5_load[18,] 
 PC5_bio19 <- Mri_370_2030_stand[[19]] * PC5_load[19,] 
 
-PC5_bio_Mri_370N_2030 <- PC5_bio1 + PC5_bio2 + PC5_bio3 + PC5_bio4 + PC5_bio5 + PC5_bio6 + PC5_bio7 + PC5_bio8 + PC5_bio9 + PC5_bio10 + PC5_bio11 + PC5_bio12 + PC5_bio13 + PC5_bio14 + PC5_bio15 + PC5_bio16 + PC5_bio17 + PC5_bio18 + PC5_bio19
+PC5_bio_Mri_370_2030 <- PC5_bio1 + PC5_bio2 + PC5_bio3 + PC5_bio4 + PC5_bio5 + PC5_bio6 + PC5_bio7 + PC5_bio8 + PC5_bio9 + PC5_bio10 + PC5_bio11 + PC5_bio12 + PC5_bio13 + PC5_bio14 + PC5_bio15 + PC5_bio16 + PC5_bio17 + PC5_bio18 + PC5_bio19
 
 dir.create("PCA_out_bio_Mri_370_2030")
 setwd("PCA_out_bio_Mri_370_2030")
