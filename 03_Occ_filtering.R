@@ -13,7 +13,8 @@ setwd(choose.dir())
 getwd()
 
 # paste the full file pathway from the console into the setwd() function for future reference
-setwd("C:/Users/Public/Documents/Modelling/Apium_repens")
+# needs to end with species name separated by underscore
+setwd("C:/Users/Public/Documents/Modelling/...")
 
 wd <-paste0(getwd())
 species <- basename(wd)
