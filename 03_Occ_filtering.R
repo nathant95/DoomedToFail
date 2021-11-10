@@ -16,7 +16,7 @@ getwd()
 setwd("C:/Users/Public/Documents/Modelling/...")
 
 # DATA PREPARATION
-ProjW = "+proj=longlat +ellps=WGS84 +towgs84=0,0,0,0,0,0,0 +no_defs" #map projection (EPSG: 4326)
+ProjW = "+proj=longlat +ellps=WGS84 +no_defs" #map projection (EPSG: 4326)
 
 # Load cleaned occurrence dataset and convert to spatial points df
 species_occ <- read.table("occurrences.txt", header=TRUE)
