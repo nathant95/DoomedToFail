@@ -43,7 +43,7 @@ library(rangeBuilder)
 # be prepared for this to take a long time!!!
 
 distance <- as.numeric(20)
-thinned_occ <- filterByProximity(xy, dist=paste0(distance), mapUnits = FALSE, returnIndex = FALSE)
+thinned_occ <- filterByProximity(xy, dist=distance, mapUnits = FALSE, returnIndex = FALSE)
 str(thinned_occ)
 
 # Plot on SDM raster to check how many records will be used in modelling
@@ -71,7 +71,7 @@ write.csv(thinned_occ, file=paste("presences",".csv",sep=""))
 
 # Create index showing which records were removed
 # may also take a long time!!
-removed_points <- filterByProximity(xy, dist=paste0(distance), mapUnits = FALSE, returnIndex = TRUE)
+removed_points <- filterByProximity(xy, dist=distance, mapUnits = FALSE, returnIndex = TRUE)
 # Add row number column called ID
 xy$ID <- seq.int(nrow(xy))
 
